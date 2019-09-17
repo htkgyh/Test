@@ -1,0 +1,85 @@
+[
+  {
+    "id": "main",
+    "layers": [
+      {
+        "id": "main_1",
+        "zIndex": 0,
+        "widgets": [
+          {
+            "id": "Menu_1",
+            "type": "XMenu",
+            "targets": [],
+            "settings": {
+              "visible": true,
+              "draggable": false,
+              "transparent": true,
+              "closable": false,
+              "title": "Menu",
+              "showHeader": false,
+              "display": "pin",
+              "position": {
+                "vertical": {
+                  "value": "auto",
+                  "align": "top",
+                  "top": 2
+                },
+                "horizontal": {
+                  "value": "adaptive",
+                  "left": 2,
+                  "right": 2
+                },
+                "zIndex": 3
+              }
+            },
+            "config": {
+              "items": [
+                {
+                  "title": "微生物",
+                  "type": "menu",
+                  "icon": "ios-build-outline",
+                  "menu": [
+                    {
+                      "title": "microbiologyDemo",
+                      "type": "action",
+                      "icon": "ios-build",
+                      "action": "microbiologyDemo.show()"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "microbiologyDemo",
+            "type": "microbiologyDemo",
+            "targets": [],
+            "settings": {
+              "visible": false,
+              "draggable": false,
+              "closable": true,
+              "showHeader": true,
+              "transparent": true,
+              "display": "solo",
+              "position": {
+                "vertical": {
+                  "value": "adaptive",
+                  "top": 0,
+                  "bottom": 0
+                },
+                "horizontal": {
+                  "value": "adaptive",
+                  "left": 0,
+                  "right": 0
+                },
+                "zIndex": 5
+              }
+            },
+            "config": {
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
